@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "",
+  "info": {
+    "name": "Event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "OccursDate": {
+      "type": "datetime"
+    },
+    "Content": {
+      "type": "richtext"
+    }
+  }
+}
