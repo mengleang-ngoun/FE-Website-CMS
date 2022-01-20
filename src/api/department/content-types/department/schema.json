@@ -4,18 +4,25 @@
   "info": {
     "singularName": "department",
     "pluralName": "departments",
-    "displayName": "Department"
+    "displayName": "Department",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "DepID": {
-      "type": "uid"
-    },
-    "Dep_name": {
+    "dep_full_name": {
       "type": "string"
+    },
+    "dep_short_name": {
+      "type": "string"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "inversedBy": "department"
     }
   }
 }
