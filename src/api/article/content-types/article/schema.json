@@ -29,8 +29,19 @@
     },
     "article_category": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::news-category.news-category"
+      "relation": "manyToOne",
+      "target": "api::article-category.article-category",
+      "inversedBy": "articles"
+    },
+    "image_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "files"
+      ]
     }
   }
 }
